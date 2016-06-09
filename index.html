@@ -308,10 +308,12 @@
     var link = document.querySelector(".workinprogress-link");
     var popup = document.querySelector(".lbox2-bg");
     var close = document.querySelector(".close._2");
+    var login = document.querySelector(".lbox2textfield");
 
     link.addEventListener("click", function(event) {
       event.preventDefault();
       popup.classList.add("lbox2-bg-show");
+      login.focus();
     });
 
     close.addEventListener("click", function(event) {
